@@ -2,8 +2,7 @@
 
 A beautiful and feature-rich weather application built with Node.js and vanilla JavaScript, offering real-time weather information and forecasts.
 
-![Weather App Demo](https://dainty-churros-0441c8.netlify.app/)
-
+[🌤️ Weather App Demo](https://dainty-churros-0441c8.netlify.app/)
 ## Features
 
 - 🌓 Dark/Light theme support
