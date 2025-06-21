@@ -1,0 +1,38 @@
+<<<<<<< HEAD
+ node_modules/
+.env
+data.json
+.DS_Store
+*.log
+# Local Netlify folder
+.netlify
+=======
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+data.json
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+>>>>>>> f56b91c44ace3dff51444ad3cd663740e9c342e2

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="themeToggle">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+  
+  <div class="container">
+    <h1><i class="fas fa-cloud-sun"></i> Weather App</h1>
+    
+    <form id="searchForm">
+      <div class="search-container">
+        <input type="text" id="cityInput" placeholder="Enter city name..." required />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
+    </form>
+
+    <div id="searchHistory" class="search-history">
+      <h3>Recent Searches</h3>
+      <div class="history-items"></div>
+    </div>
+
+    <div id="loader" class="loader hidden"></div>
+
+    <div id="weatherCard" class="card hidden">
+      <div class="current-weather">
+        <div class="weather-header">
+          <h2 class="city-name"></h2>
+          <button id="saveBtn" class="favorite-btn">
+            <i class="far fa-star"></i>
+          </button>
+        </div>
+        <div class="weather-info">
+          <div class="temperature">
+            <span class="temp-value"></span>
+            <button id="unitToggle" class="unit-toggle">°C</button>
+          </div>
+          <div class="condition">
+            <img class="weather-icon" src="" alt="Weather icon" />
+            <span class="condition-text"></span>
+          </div>
+        </div>
+        <div class="weather-details">
+          <div class="detail">
+            <i class="fas fa-temperature-low"></i>
+            <span>Feels like: <span class="feels-like"></span></span>
+          </div>
+          <div class="detail">
+            <i class="fas fa-tint"></i>
+            <span>Humidity: <span class="humidity"></span></span>
+          </div>
+          <div class="detail">
+            <i class="fas fa-wind"></i>
+            <span>Wind: <span class="wind-speed"></span></span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="forecast">
+        <h3>5-Day Forecast</h3>
+        <div class="forecast-container"></div>
+      </div>
+    </div>
+
+    <div class="favorite-section">
+      <h3><i class="fas fa-star"></i> Favorite City</h3>
+      <p id="favoriteCity">None saved</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
